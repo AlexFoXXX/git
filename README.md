@@ -101,3 +101,22 @@ java.lang.AssertionError
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Build step 'Вызвать цели Maven верхнего уровня  ' marked build as failure
 Finished: FAILURE
+
+
+
+
+
+
+
+Bring It On 
+1. Установите Jenkins
+
+2. Создайте задачу которая будет делать следующее:
+
+Клонировать проект https://github.com/vitalliuss/helloci
+Запускать тесты из проекта в директори Java с помощью цели mvn test
+3. Настройте билд триггеры:
+
+Запуск тестов не позднее чем через 5 минут после коммита в git
+Каждый будний день в полночь
+4. Опубликуйте файл “Java\target\surefire-reports\com.github.vitalliuss.helloci.AppTest.txt” как артефакт
