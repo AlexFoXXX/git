@@ -209,3 +209,6 @@ java.lang.AssertionError
 Build step 'Вызвать цели Maven верхнего уровня  ' marked build as failure
 Archiving artifacts
 Finished: FAILURE
+
+
+launch agent via java web start not showing
